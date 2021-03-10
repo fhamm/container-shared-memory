@@ -1,0 +1,12 @@
+version: '3'
+services:
+  consumer:
+    container_name: transmitter
+    command: python3 main.py
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/usr/local/app/
+    tty: true
+    #environment:
