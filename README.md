@@ -7,7 +7,7 @@ This is a simple example of how you can share memory blocks between containers u
 ### Build with docker-compose
 ```docker-compose up```
 
-Or alternatively (and with more work), build and run the transmitter and receiver individually:
+Or alternatively (*and with more work*), **build and run the transmitter and receiver individually:**
 
 ### Build transmitter image
 ```docker build ./transmitter/ --tag "transmitter:shm"```
@@ -21,7 +21,7 @@ Or alternatively (and with more work), build and run the transmitter and receive
 ### Run receiver
 ```docker run --ipc="container:[TRANSMITTER_CONTAINER_ID]" [RECEIVER_IMAGE_ID]```
 
-## Author
+## Author(s)
 This example was created by Felipe Hamm, Rodrigo Faria and Luiz Doniec.
 
 ## Useful links
@@ -31,3 +31,5 @@ https://docs.docker.com/engine/reference/commandline/build/
 https://docs.docker.com/engine/reference/run/#ipc-settings---ipc
 
 https://docs.python.org/3/library/multiprocessing.shared_memory.html
+
+https://github.com/docker/compose/issues/7220
