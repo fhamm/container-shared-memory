@@ -2,13 +2,9 @@ version: '3'
 services:
   transmitter:
     container_name: transmitter 
-    command: python3 main.py 
     ipc: "shareable"
     build: transmitter/ 
-    tty: true 
   receiver: 
     container_name: receiver
-    command: python3 main.py
     ipc: "service:transmitter"
     build: receiver/
-    tty: true
