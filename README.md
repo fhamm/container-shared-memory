@@ -1,11 +1,20 @@
-# Build transmitter image
-docker build ./transmitter/ --tag "transmitter:shm"
+# Docker + SharedMemory = <3
+## Description
+This is a simple example of how you can share memory blocks between containers using Docker and Python3 SharedMemory library.
 
-# Build receiver image 
-docker build ./receiver/ --tag "receiver:shm"
+## Usage
 
-# Run transmitter
-docker run --ipc="shareable" [TRANSMITTER_IMAGE_ID]
+### Build transmitter image
+```docker build ./transmitter/ --tag "transmitter:shm"```
 
-# Run receiver
-docker run --ipc="container:[TRANSMITTER_CONTAINER_ID]" [RECEIVER_IMAGE_ID]
+### Build receiver image 
+```docker build ./receiver/ --tag "receiver:shm"```
+
+### Run transmitter
+```docker run --ipc="shareable" [TRANSMITTER_IMAGE_ID]```
+
+### Run receiver
+```docker run --ipc="container:[TRANSMITTER_CONTAINER_ID]" [RECEIVER_IMAGE_ID]```
+
+## Author
+This tutorial was written by Felipe Hamm and Rodrigo Faria.
