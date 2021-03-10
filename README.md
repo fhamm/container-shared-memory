@@ -31,3 +31,5 @@ https://docs.docker.com/engine/reference/commandline/build/
 https://docs.docker.com/engine/reference/run/#ipc-settings---ipc
 
 https://docs.python.org/3/library/multiprocessing.shared_memory.html
+
+https://github.com/docker/compose/issues/7220
