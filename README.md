@@ -18,3 +18,11 @@ This is a simple example of how you can share memory blocks between containers u
 
 ## Author
 This tutorial was written by Felipe Hamm and Rodrigo Faria.
+
+## Useful links
+
+https://docs.docker.com/engine/reference/commandline/build/
+
+https://docs.docker.com/engine/reference/run/#ipc-settings---ipc
+
+https://docs.python.org/3/library/multiprocessing.shared_memory.html
