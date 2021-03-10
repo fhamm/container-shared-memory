@@ -7,7 +7,7 @@ shm = shared_memory.SharedMemory(create=False, name=SHM_NAME, size=SHM_SIZE)
 buffer = shm.buf
 
 for n in range(SHM_SIZE):
-    print("Reading", buffer[n])
+    print("Reading", buffer[n], "at", n)
 
 buffer[0] = 1;
 shm.close()
