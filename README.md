@@ -4,6 +4,11 @@ This is a simple example of how you can share memory blocks between containers u
 
 ## Usage
 
+### Build with docker-compose
+```docker-compose up```
+
+Or alternatively (and with more work), build and run the transmitter and receiver individually:
+
 ### Build transmitter image
 ```docker build ./transmitter/ --tag "transmitter:shm"```
 
