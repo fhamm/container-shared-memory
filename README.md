@@ -21,7 +21,7 @@ Or alternatively (and with more work), build and run the transmitter and receive
 ### Run receiver
 ```docker run --ipc="container:[TRANSMITTER_CONTAINER_ID]" [RECEIVER_IMAGE_ID]```
 
-## Author
+## Author(s)
 This example was created by Felipe Hamm, Rodrigo Faria and Luiz Doniec.
 
 ## Useful links
